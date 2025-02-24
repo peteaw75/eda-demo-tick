@@ -7,7 +7,7 @@
   rules:
     - name: Run job
 	  condition: event.i is defined
-	  actions:
-	    - run_job_template:
-		    name: "paw_EDA_demo_tick"
-		    organization: "Default"
+	  action:
+	    run_job_template:
+		  name: "paw_EDA_demo_tick"
+		  organization: "Default"
