@@ -9,6 +9,6 @@
     - name: Run ansible job
       condition: event.i is defined
       actions:
-        run_job_template:
-          name: "EDA-test-tick"
+      - run_job_template:
+          name: "EDA-test-tick"
           organization: "Default"
