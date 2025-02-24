@@ -3,11 +3,11 @@
   hosts: all
   sources:
     - ansible.eda.tick:
-	    delay: 60
+        delay: 60
   rules:
     - name: Run job
-	  condition: event.i is defined
-	  action:
-	    run_job_template:
-		  name: "paw_EDA_demo_tick"
-		  organization: "Default"
+      condition: event.i is defined
+      action:
+        run_job_template:
+          name: "paw_EDA_demo_tick"
+          organization: "Default"
